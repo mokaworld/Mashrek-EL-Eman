@@ -1,0 +1,252 @@
+/* START ROOT */
+:root{
+    --mainColor--:#0A993C;
+}
+/* END ROOT */
+/* START MAIN RULEZ */
+body{
+    font-family: 'Cairo', sans-serif;
+}
+a{
+    text-decoration: none!important;
+    color: #fff;
+}
+/* END MAIN RULEZ */
+
+
+/* START HEADER SECTION  */
+.navbar{
+    padding: 25px 0;
+    background: rgba(0,0,0,.7);
+}
+.navbar .navbar-nav .nav-link{
+    padding: 0 15px;
+    color: #ddd;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--mainColor--);
+}
+.navbar a{
+
+    color: #fff;
+    font-weight: bold;
+}
+.navbar a.active{
+    color: var(--mainColor--);
+}
+
+.navbar .navbar-brand:hover{
+    color: var(--mainColor--);
+}
+.header{
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header .overlay{
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+}
+.header img{
+    height: 100vh;
+}
+.header .header-info{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: #eee;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+.header .header-info h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.header .header-info p{
+    font-size: 25px;
+}
+
+/* END HEADER SECTION  */
+/* START AHADETH TODAY SECTION  */
+
+
+.ahadeth-today  {
+    padding-top: 50px 0;
+  
+}
+.ahadeth-today h2 {
+     padding: 50px 0;
+    font-weight: 100;
+  
+}
+.ahadeth-today .item {
+  
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #ccc;
+    cursor: pointer;
+}
+/* END AHADETH TODAY SECTION  */
+
+
+.mohadrat  {
+    padding-top: 50px 0;
+  
+}
+.mohadrat h2 {
+     padding: 50px 0;
+    font-weight: 100;
+  
+}
+.mohadrat .mohadrat-item{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #ccc;
+    cursor: pointer;
+
+}
+
+.mohadrat .mohadrat-videos iframe{
+    width: 100%;
+    height: 350px;
+    
+}
+
+.mohadrat .mohadrat-videos .disc{
+    margin: 10px 0;
+}
+
+.mohadrat .mohadrat-videos .disc{
+    margin: 10px 0;
+}
+.mohadrat .mohadrat-videos .disc h5{
+    margin: 10px 0;
+}
+
+.mohadrat .mohadrat-videos .disc p{
+    width: 100%;
+    line-height: 30px;
+    color: #727272;
+}
+.quran{
+   padding-top: 50px 0;
+}
+.quran h2{
+     padding: 50px 0;
+    font-weight: 100;
+}
+.quran .quran-title{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #ccc;
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.quran .quran-title span{
+    display: block;
+}
+
+.pray{
+padding: 50px 0;
+}
+.pray h2{
+    padding: 50px 0;
+    font-weight: 100;
+    }
+    .pray .time-box {
+        background: #fffefe;
+        margin: 20px auto;
+        width: 250px;
+        height: 200px;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+}
+.pray .time-box .time-img {
+  background-color: #f9f9f9;
+  border: 2px solid #0A993C;
+  border-left-color: transparent;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  animation-name: pray-time;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: .5s all ease-in-out;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+}
+.pray .time-box .time-img img{
+    margin: 0 auto;
+}
+
+.pray .time-box .time-details span{
+    display: block;
+    line-height: 1.5rem;
+    padding: 2px 0;
+}
+
+@keyframes  pray-time {
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+      }
+    100%{
+        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+
+.footer{
+    background-color: #eee;
+}
+.footer p span{
+    color: var(--mainColor--);
+    font-weight: bold;
+}
